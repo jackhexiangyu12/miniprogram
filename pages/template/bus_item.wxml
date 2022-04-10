@@ -1,0 +1,18 @@
+<template name="bus_item">
+    <block>
+        <view class="bus_item">
+            <view>
+                <image src="{{item.image}}" style="width:75px;height:75px;" ></image>
+            </view>
+            <view class="bus_desc">
+                <view class="bus_title">班车{{item.bus_plate_number}}</view>
+                <view class="bus_count">
+                    <view>预计{{item.datetime}}到达 </view>
+                    <view class="bus_available">可用：{{item.available}}</view>
+                    <view class="bus_occupied">已用：{{item.occupied}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="bus_hr2"></view>
+    </block>
+</template>

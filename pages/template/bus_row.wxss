@@ -1,0 +1,20 @@
+.bus_row {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.bus_row_container{
+    display: flex;   
+    align-items: center;   
+    vertical-align: center;
+    justify-content: center; 
+    flex-direction:row; 
+}
+
+.bus_row_hr2 {
+    height: 2px;
+    background-color: #cccccc;
+    opacity: 0.2;
+}

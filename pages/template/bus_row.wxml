@@ -1,0 +1,22 @@
+<template name="bus_row">
+    <block>
+        <view class="bus_row_container">
+            <view class="bus_row">
+                <image wx:if="{{item.availablity[0]}}" src="../images/icon/bus_occupied_seat.png" style="width:25px;height:23px;"></image>
+                <image wx:if="{{!item.availablity[0]}}" src="../images/icon/bus_available_seat.png" style="width:25px;height:23px;" bindtap="onSeatItemClick" data-item="{{item}}" data-column="0"></image>
+                
+                <image wx:if="{{item.availablity[1]}}" src="../images/icon/bus_occupied_seat.png" style="width:25px;height:23px;"></image>
+                <image wx:if="{{!item.availablity[1]}}" src="../images/icon/bus_available_seat.png" style="width:25px;height:23px;" bindtap="onSeatItemClick" data-item="{{item}}" data-column="1"></image>
+
+                <view style="width: 12px;height: 8px; margin: 2px;"></view>
+
+                <image wx:if="{{item.availablity[2]}}" src="../images/icon/bus_occupied_seat.png" style="width:25px;height:23px;"></image>
+                <image wx:if="{{!item.availablity[2]}}" src="../images/icon/bus_available_seat.png" style="width:25px;height:23px;" bindtap="onSeatItemClick" data-item="{{item}}" data-column="2"></image>
+
+                <image wx:if="{{item.availablity[3]}}" src="../images/icon/bus_occupied_seat.png" style="width:25px;height:23px;"></image>
+                <image wx:if="{{!item.availablity[3]}}" src="../images/icon/bus_available_seat.png" style="width:25px;height:23px;" bindtap="onSeatItemClick" data-item="{{item}}" data-column="3"></image>
+            </view>
+        </view>
+        <view class="bus_row_hr2"></view>
+    </block>
+</template>

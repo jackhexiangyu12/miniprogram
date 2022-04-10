@@ -1,0 +1,46 @@
+.bus_item {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.bus_desc {
+    margin-left: 20px;
+    line-height: 30px;
+}
+
+.bus_title {
+    font-weight: bold;
+}
+
+.bus_count {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    color: #999999;
+}
+
+.bus_available {
+    position: absolute;
+    right: 70px;
+}
+
+.bus_occupied {
+    position: absolute;
+    right: 10px;
+}
+
+.bus_hr {
+    height: 15px;
+    background-color: #cccccc;
+    margin-top: 15px;
+    opacity: 0.2;
+}
+
+
+.bus_hr2 {
+    height: 2px;
+    background-color: #cccccc;
+    opacity: 0.2;
+}
